@@ -21,4 +21,19 @@ export default [
       },
     ],
   },
+  {
+    title: '自定义页',
+    link: '/demo',
+    key: 'demo',
+    icon: '',
+    children: [
+      {
+        title: 'demo1',
+        link: '/demo/demo1',
+        key: 'demo1',
+        icon:'',
+        children:[], 
+      }
+    ]
+  }
 ];
