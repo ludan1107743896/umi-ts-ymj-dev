@@ -1,9 +1,15 @@
 import React from 'react';
+import HeaderComp from "./components/HeaderComp";
+import styles from './index.less';
 
-const Demo: React.FC = () => {
+const Demo1: React.FC = () => {
   return (
-    <div>这是function  react  components</div>
+    <>
+      <div className={styles['header-nav-box']}>
+        <HeaderComp />
+      </div>
+    </>
   )
 }
 
-export default Demo;
+export default Demo1;

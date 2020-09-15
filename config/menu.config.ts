@@ -33,6 +33,12 @@ export default [
         key: 'demo1',
         icon:'',
         children:[], 
+      },
+      {
+        title: 'template',
+        link: '/demo/template',
+        key: 'template',
+        icon:'',
       }
     ]
   }
