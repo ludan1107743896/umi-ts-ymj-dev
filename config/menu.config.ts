@@ -1,6 +1,6 @@
 export default [
   {
-    title: 'Dashboard',
+    title: '首页',
     link: '/dashboard',
     key: 'dashboard',
     icon: '',
@@ -27,13 +27,13 @@ export default [
     key: 'demo',
     icon: '',
     children: [
-      {
-        title: 'demo1',
-        link: '/demo/demo1',
-        key: 'demo1',
-        icon:'',
-        children:[], 
-      },
+      // {
+      //   title: 'demo1',
+      //   link: '/demo/demo1',
+      //   key: 'demo1',
+      //   icon:'',
+      //   children:[], 
+      // },
       {
         title: 'template',
         link: '/demo/template',

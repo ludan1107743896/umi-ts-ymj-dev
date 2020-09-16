@@ -2,6 +2,8 @@ import React, { FC, Suspense, useEffect } from 'react';
 import { connect, Dispatch } from 'umi';
 import { Loading, DashboardState } from '@/models/connect';
 import PageLoading from './components/PageLoading';
+import CardComp from './components/cardComp';
+
 
 const VisitCard = React.lazy(() => import('./components/visitCard'));
 interface DashboardProps {
@@ -24,6 +26,7 @@ const Dashboard: FC<DashboardProps> = ({ dashboard, dispatch, loading }) => {
       <Suspense fallback={<PageLoading />}>
         <VisitCard totalData={cardSource} loading={loading} />
       </Suspense>
+      <CardComp />
     </div>
   );
 };
