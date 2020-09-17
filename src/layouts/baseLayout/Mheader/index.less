@@ -1,0 +1,50 @@
+@height: 120px;
+@color: #4ab344;
+@baseBackGround: #fff;
+@weight: 900;
+
+.commonMenuItem() {
+    height: @height;
+    line-height: @height;
+    width: @height;
+    margin: 0;
+    text-align: center;
+    font-size: 20px;
+    font-weight: @weight;
+}
+.commonHover() {
+    .commonMenuItem();
+    background: @color;
+    color: @baseBackGround;
+}
+.mheader-box{
+    height: @height;
+    background: @baseBackGround;
+    .mheader-center-box{
+        width: 1000px;
+        margin: 0 auto;
+        h1{
+            line-height: @height;
+            color: @color;
+            font-size: 32px;
+            cursor: pointer;
+            font-weight: @weight;
+            margin: 0;
+        }
+        .menu-item-sty {
+            .commonMenuItem()
+        }
+        .menu-item-sty:hover{
+            .commonHover();
+        }
+        .menu-item-sty:active{
+            .commonHover();
+            color: @baseBackGround;
+        }
+        .menu-item-active{
+            .commonMenuItem();
+            background: @color;
+            color: @baseBackGround;
+        }
+    }
+}
