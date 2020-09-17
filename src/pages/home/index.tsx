@@ -1,6 +1,6 @@
 import React from 'react';
 import { Dispatch } from 'umi';
-
+import BannerList from './components/BannerList';
 
 interface BaseHome {
     dispatch: Dispatch;
@@ -9,7 +9,7 @@ interface BaseHome {
 const Home: React.FC<BaseHome> = () => {
     return (
         <div>
-            这是home界面
+            <BannerList />
         </div>
     )
 }
