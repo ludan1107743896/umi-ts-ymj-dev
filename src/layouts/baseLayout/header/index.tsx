@@ -4,7 +4,7 @@ import UserSetting from './userSetting';
 export default function() {
   return (
     <>
-      <div style={{ fontSize: 22, color: '#fff' }}>数据管理平台</div>
+      <div style={{ fontSize: 22, color: '#fff' }}>我的网站</div>
       <UserSetting />
     </>
   );

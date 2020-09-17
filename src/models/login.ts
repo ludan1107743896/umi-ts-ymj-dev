@@ -49,7 +49,7 @@ const LoginModel: LoginModelType = {
           JSON.stringify(response.currentAuthority.userid),
         );
         message.success('登录成功！');
-        history.replace('/');
+        history.replace('/home');
       } else {
         yield put({
           type: 'save',

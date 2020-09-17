@@ -3,6 +3,7 @@ import { Layout } from 'antd';
 import HeaderContent from './header';
 import MenuContent from './menu';
 import styles from './index.less';
+// import type from ''
 
 const { Header, Content, Sider } = Layout;
 
