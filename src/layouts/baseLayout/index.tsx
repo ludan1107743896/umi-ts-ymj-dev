@@ -15,6 +15,9 @@ export default (props: any) => {
       return (
         <Layout className={styles.container}>
           <MHeader />
+          <Layout>
+            <Content>{props.children}</Content>
+          </Layout>
         </Layout>
       );
     } else {
